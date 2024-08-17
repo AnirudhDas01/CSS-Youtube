@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'nunito', sans-serif;
+    font-size: 1.5 rem;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #51d6ff;
+}
+
+main { 
+    flex-grow: 1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+div { 
+    width: 200px;
+    height: 200px;
+    border: 2px rgba(0, 0, 0, 0.062);
+    display: grid;
+    place-content: center;
+    border-radius: 50px;
+
+}
+
+div:first-child {
+    background-color: #33658A;
+    transform: translateX(-50%)
+}
+div:nth-child(2) {
+    background-color: #FFF3B0;
+    transform :translateY(-4rem)
+}
+div:last-child {
+    background-color: #7fb7be;
+    transform:translateX(50%)
+    translateY(-8rem)
+}
+
+.square:first-child , .square:last-child {
+    color: white;
+}
+.square:nth-child(2) {
+    color: #8b0b45bd;
+}
+
+.square {
+    text-shadow: 2px 2px #0000003b;
+}
+
+div:hover {
+    box-shadow: 2px 2px 4px #5353537c;
+    width: 220px;
+    height: 220px;
+    transition-property: box-shadow ,width, height;
+    transition-timing-function: ease;
+    transition: all  0.5s ;
+}
+
+.animate { 
+    /* animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-direction: alternate;  */
+    animation: 2s ease-in-out 1s 1 alternate forwards slide;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: tanslateX(-50%) translateY(-10);
+        
+    }
+    100% {
+        transform: tanslateX(-50%) translateY(-8rem);
+        background-color :rebeccapurple
+    }
+}
