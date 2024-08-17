@@ -6,6 +6,9 @@
         color: blue;
 
     }
+    p  {
+        color: lightblue !important;
+    }
 
     .highlight {
         text-transform :Uppercase;
@@ -18,7 +21,7 @@
 
     }
     #first {
-        color: purple
+        color: purple;
     }
 
     #second {
