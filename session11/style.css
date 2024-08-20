@@ -1,0 +1,30 @@
+.columns {
+    /* column-count: 4;
+    column-width: 250px; */
+    columns: 4 250px;
+    column-rule: 1px solid #333;
+}
+
+.columns p {
+    margin-top: 0px;
+}
+
+h1 {
+    color :whitesmoke;
+    background-color: black;
+    /* display: none; */
+    padding: 1rem;
+    break-inside: avoid;
+}
+
+.columns .quote {
+    margin-top: 2rem; 
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    column-span: all;
+}
+
+.nowrap { 
+    white-space: nowrap;
+}
